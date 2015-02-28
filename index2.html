@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        body{margin-top:50px;}
+        .glyphicon { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                            </span>Clients</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="clients/addclient.php" target="iframe_a">Add Client</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="clients/getclientsinfo.php" target="iframe_a">See All Clients</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-glass">
+                            </span>Dishes</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="dishes/adddish.php" target="iframe_a">Add Dish</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="dishes/getdishinfo.php" target="iframe_a">See All Dishes</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                            </span>Employees</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="employees/addemployee.php" target="iframe_a">Add Employee</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="employees/getemployeeinfo.php" target="iframe_a">See All Employees</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-th">
+                            </span>Events</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="events/addevent.php" target="iframe_a">Add Event</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="events/geteventinfo.php" target="iframe_a">See All Events</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-map-marker">
+                            </span>Halls</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="halls/addhall.php" target="iframe_a">Add Hall</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="halls/gethallinfo.php" target="iframe_a">See All Halls</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span class="glyphicon glyphicon-briefcase">
+                            </span>Jobs</a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="jobs/addjob.php" target="iframe_a">Add a Job</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="jobs/getjobinfo.php" target="iframe_a">See All Jobs</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon glyphicon-cutlery">
+                            </span>Menus</a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="menus/addmenu.php" target="iframe_a">Add Menu</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="menus/getmenuinfo.php" target="iframe_a">See All Menus</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="menus/getmenudish.php" target="iframe_a">All Menus Including Dishes</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon glyphicon-list-alt">
+                            </span>Reservations</a>
+                        </h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="reservetions/addreservation.php" target="iframe_a">Add Reservation</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="reservetions/getreservationinfo.php" target="iframe_a">See All Reservations</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"><span class="glyphicon glyphicon-usd">
+                            </span>Bills</a>
+                        </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="bills/addbill.php" target="iframe_a">Add a Bill</a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <ul class="nav nav-tabs">
+                <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> About Reservation <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="bills/getbill_form.php" target="iframe_a">Client Receipt</a></li>
+                    <li><a href="reservation_by_hall_form.php" target="iframe_a">Amount By Hall</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Finance <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="finance_net.php" target="iframe_a">NET</a></li>
+                        <li><a href="finance_gross.php" target="iframe_a">GROSS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Employees <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="employee_in_reservetion_form.php" target="iframe_a">In Reservation</a></li>
+                        <li><a href="employees_in_halls.php" target="iframe_a">In Halls</a></li>
+                        <li><a href="reservation_orderd_form.php" target="iframe_a">Reservation Ordered</a></li>
+                        <li><a href="employee_job.php" target="iframe_a">Who Does What?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Change <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="change_number_of_invite_form.php" target="iframe_a">Number Of Invites</a></li>
+                        <li><a href="change_salary_form.php"  target="iframe_a">Salary</a></li>
+                        <li><a href="add_dish_to_menu_form.php" target="iframe_a">Add Dishes To Menu</a></li>
+                        <li><a href="change_dish_in_menu_form.php" target="iframe_a">Change Dishes In Menu</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a  href="biggest_event.php" target="iframe_a"> Biggest Event</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" name="iframe_a"> Date Range <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reservation_by_periods_form.php" target="iframe_a">Show Event</a></li>
+                        <li><a href="number_of_events_form.php" target="iframe_a">Number Of Events</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <iframe width="900" height="1000px"  frameborder="0" src="welcome.html" name="iframe_a"></iframe>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
